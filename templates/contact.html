@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% load static %}
+
+
+{% block style %}
+
+<style>
+    #contact-link{
+        color: white;
+    }
+</style>
+
+{% endblock style %}
+
+<div id="booking-div" class="promo">
+
+  {% if submitted %}
+  <div class="success-div">
+    <img src="{%static 'illustration/success.png' %}" alt="">
+    <h1>Thank you for messaging us! Our team will contact you soon.</h1>
+    <a href="/"><button class='btn'>Back To Home</button></a>
+  </div>
+  {% else %}
+
+  <div class="form">
+    <form action="{%url 'contact_us' %}" method='post'> {% csrf_token %}
+    <div class="formsub-div">
+      <div>
+        <label for="">First Name : </label>
+        <input required name='first_name' placeholder='first name' class="inputbox" type="text" />
+      </div>
+      <div>
+        <label for="">Last Name : </label>
+        <input required name='last_name' placeholder='last name' class="inputbox" type="text" />
+      </div>
+    </div>
+    <div class="formsub-div">
+      <div>
+        <label for="">Email : </label>
+        <input required name='email' placeholder='email' class="inputbox" type="email" />
+      </div>
+      <div>
+        <label for="">Mobile : </label>
+        <input required name='mobile' placeholder='mobile number' class="inputbox" type="text" />
+      </div>
+    </div>
+    <label for="">Message</label>
+    <div>
+        <textarea required placeholder='Type your message.' class='inputbox' name="message" id="textarea" cols="80" rows="10"></textarea>
+    </div>
+    <button class="btn">Submit</button>
+  </form>
+  </div>
+  {% endif %}
+</div>
+
+{% endblock body %}
+

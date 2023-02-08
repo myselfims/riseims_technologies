@@ -1,0 +1,58 @@
+{% extends 'base.html' %} {% block body %}
+{% load static %}
+
+{% block style %}
+
+<style>
+   
+</style>
+
+{% endblock style %}
+
+<div id="booking-div" class="promo">
+
+  {% if submitted %}
+  <div class="success-div">
+    <img src="{%static 'illustration/success.png' %}" alt="">
+    <h1>Thank you for choosing us! Our team will contact you soon.</h1>
+    <a href="/"><button class='btn'>Back To Home</button></a>
+  </div>
+  {% else %}
+
+  <div class="form">
+    <form action="{%url 'booking' plan.id %}" method='post'> {% csrf_token %}
+    <div class="planinfo">
+      <h1>Plan : {{plan.name}} - ₹{{plan.price}}</h1>
+      <a href="/"><button type='button' class="btn">Change</button></a>
+    </div>
+    <div class="formsub-div">
+      <div>
+        <label for="">First Name : </label>
+        <input required name='first_name' placeholder='First name' class="inputbox" type="text" />
+      </div>
+      <div>
+        <label for="">Last Name : </label>
+        <input required name='last_name' placeholder='Last name' class="inputbox" type="text" />
+      </div>
+    </div>
+    <div class="formsub-div">
+      <div>
+        <label for="">Email : </label>
+        <input required name='email' placeholder='Email' class="inputbox" type="email" />
+      </div>
+      <div>
+        <label for="">Mobile : </label>
+        <input required name='mobile' placeholder='Mobile number' class="inputbox" type="text" />
+      </div>
+    </div>
+    <label for="">Description about business</label>
+    <div>
+        <textarea required placeholder='Tell us about the website.' class='inputbox' name="desc" id="textarea" cols="80" rows="10"></textarea>
+    </div>
+    <button class="btn">Book Now</button>
+  </form>
+  </div>
+  {% endif %}
+</div>
+
+{% endblock body %}

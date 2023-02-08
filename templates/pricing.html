@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block style %}
+
+<style>
+    #pricing-link{
+        color: white;
+    }
+</style>
+
+{% endblock style %}
+
+{% block body %}
+
+<div id='pricingdiv' class="promo">
+    <h1 class="headings">Our Pricing</h1><hr>
+    <div class="innerpricingdiv">
+      {% for plan in plans %}
+      <div class="pricecard">
+          <h2>{{plan.name}}</h2><hr>
+          <ul>
+            {% for detail in plandetails %}
+            
+            {% if plan.name|stringformat:'s' == detail.plan|stringformat:'s' %}
+            <li>{{detail.detail}}</li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          <hr>
+          <h3>Price : ₹{{plan.price}} <sup><s>₹{{plan.maxprice}}</s></sup></h3>
+          <a href="{%url 'booking' plan.id %}"><button  class='btn'>Select</button></a>
+      </div>
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+{% endblock body %}

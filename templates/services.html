@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+
+<style>
+    #services-link{
+        color: white;
+    }
+</style>
+
+{% endblock style %}
+
+{% block body %}
+<link rel="stylesheet" href="/static/style.css">
+<div id="home-div" class="promo">
+    <div class="services-div">
+
+        <h1 class="headings">Our Services</h1><hr>
+        <div class="allservices">
+          {%for service in services%}
+          <div style="background-image: url('{%static 'Illustration/' %}{{service.service_title}}.jpg');"  class="card" >
+            <div class="service-div">
+              <label>{{service.service_title}}</label>
+            </div>
+          </div>
+          {%endfor%}
+        </div>
+    </div>
+</div>
+
+<div id='reviews-div' class="promo">
+    <div class="reviews-div">
+        <h1>Client Reviews</h1>
+        {% for review in reviews %}
+        <div class="review-div">
+            <h3>{{review.name}}</h3>
+            <hr>
+            <p>{{review.desc}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock body %}
+<head></head>
+<body>
+    
+</body>

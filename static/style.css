@@ -1,0 +1,687 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+ 
+  }
+
+.nav-colored { background-color:#000; }
+.nav-transparent { background-color:transparent;}
+
+  main{
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  footer{
+    overflow-x: hidden;
+  }
+  html{
+    font-size: 62.5%;
+  }
+  #logo {
+    margin: 0;
+    width: 22rem;
+    padding: 1rem;
+    
+  }
+  #logo:hover{
+    filter: brightness(100%)invert();
+    
+  }
+  .navbar {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 31, 124, 1) 0%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    font-size: 1vw;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    
+  }
+  .navcontainer{
+    z-index: 2;
+    display: flex;
+    /* background-color: white; */
+    flex-direction: row;
+    width: 100vw;
+    font-size: 1.5rem;
+    /* box-shadow: 2px 2px 5px; */
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0 10%;
+  }
+
+  #sidebartoggelbtn{
+    display: none;
+    font-size: 5rem;
+    padding: 0.5em;
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+    margin: 0 0.5rem 0 0;
+}
+.sidebar-div{
+  display: none;
+
+}
+
+  .navcontainer button{
+    justify-self: flex-end;
+    margin: 0 3rem 0 0;
+  }
+  .btn{
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    font-size:2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(72, 109, 244),rgb(238, 54, 106));
+  }
+
+  .btn:hover{
+    background-image: none;
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease-in;
+  }
+  .navlinks{
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+  .navlinks a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 1rem;
+  }
+  .navlinks a:hover{
+    color: rgba(0, 0, 0, 0.452);
+    border-bottom: 3px solid black;
+    transition: all 0.2s ease-in-out;
+    padding-bottom: 1rem;
+  }
+
+  .nav-link:hover{
+    text-decoration: underline;
+  }
+  #home-div{
+    margin-top: 12rem;
+  }
+  .intro-div{
+    margin-top: 10rem;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 6rem;
+    /* margin: 0 30%; */
+    
+  }
+  .introsub-div{
+    display: flex;
+    width: 100%;
+    padding: 0 10%;
+    /* background-color: rebeccapurple; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+  .postermodel{
+    width: inherit;
+  }
+  .postermodel img{
+    /* filter: drop-shadow(0 5px 6px black); */
+    border-bottom: 3px solid white;
+
+  }
+  .intro-div h3{
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  .promo {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    background-color: white;
+    margin: 3rem;
+    border-radius: 4rem;
+    text-align: center;
+    overflow-wrap: break-word;
+    
+  }
+  .promo h1{
+    font-size: 3rem;
+    margin: 3rem;
+  }
+
+
+  body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 31, 124, 1) 0%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+  .promoimage {
+    width: 60rem;
+    /* height: 20rem; */
+  }
+  
+  .promopara {
+    margin: 3rem;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .promopoints{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+    overflow-x: hidden;
+    box-shadow: 2px 2px 5px ;
+    padding: 3rem;
+    margin: 3rem;
+  }
+  .promopoints:hover{
+    box-shadow: 2px 2px 10px ;
+    
+  }
+  .promopoints h1{
+    font-size: 3rem;
+    line-height: 6rem;
+    width: 50%;
+  }
+  .promopoints img{
+    width: 60rem;
+    
+  }
+  
+  .services-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4rem;
+    text-align: center;
+    width: 100%;
+  }
+ 
+  .promopoints img:hover{
+    width: 62rem;
+    transition: width 0.4s ease-in-out;
+  }
+  
+
+  .allservices{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  .logodiv{
+    display: flex;
+    /* margin-left: 3rem; */
+    padding: 0;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    align-content: center;
+  }
+  .logodiv label{
+    position: fixed;
+    top: 1rem ;
+    left: 19rem;
+    font-size: 0.6rem;
+    text-decoration: none;
+    color: black;
+  }
+  .logodiv a{
+    text-decoration: none;
+  }
+  .card{
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    width: 15rem;
+    height: 10rem;
+    box-shadow: 1px 1px 10px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    background-position: center;
+    
+  }
+  .service-div{
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    align-items: center;
+    cursor: pointer;
+    
+  }
+  .service-div label{
+    cursor: pointer;
+  }
+
+  .service-div:hover{
+    opacity: 100%;
+    border-radius: 0.5rem;
+    margin: 0;
+    background-color: white;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 20px black;
+  }
+  
+  .card:hover{
+    box-shadow: 5px 5px 20px black;
+    background-image: none;
+  }
+
+  #pricingdiv{
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .innerpricingdiv{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    flex-flow: row wrap;
+  }
+
+  .pricecard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    width: 30rem;
+    height: 35rem;
+    border-radius: 1rem;
+    justify-content: space-between;
+    box-shadow: 3px 3px 10px black;
+    margin: 2rem 4rem;
+    font-size: 1.5rem;
+  }
+
+  .pricecard:hover{
+    box-shadow: 5px 5px 20px black;
+  }
+
+  .innerpricingdiv ul{
+    list-style: none;
+    margin: 0.5rem 0;
+    padding: 0;
+  }
+  .innerpricingdiv li{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(32, 32, 32, 0.742);
+    margin: 0.5rem 0;
+    padding: 0;
+  }
+  
+  .socialicons-div{
+    position: fixed;
+    left: 3rem;
+    top: 85vh;
+  }
+  .socialicons-div img{
+    width: 3rem;
+  }
+
+  /* Booking page CSS */
+  .planinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 100%; */
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+
+  #booking-div{
+    margin-top: 12rem;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .form{
+    /* background-color: red; */
+    /* width: 60%; */
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  .formsub-div{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .formsub-div div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .inputbox{
+    margin: 1rem 0;
+    font-size: 2rem;
+    padding: 0.7rem;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.196);
+    border-radius: 0.2rem;
+}
+textarea{
+  padding: 0.4rem;
+}
+.success-div img{
+  width: 15rem;
+}
+.reviews-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 100%;
+
+}
+.review-div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* background-color: red; */
+  text-align: left;
+  padding: 1rem;
+  justify-content: space-between;
+  width: 80%;
+  box-shadow: 1px 1px 5px black;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+.review-div h3{
+  margin: 0.5rem 0;
+  border-bottom: 2px solid black;
+}
+.review-div p{
+  font-size: 1.5rem;
+}
+.footer{
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+}
+
+.footercontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding: 3rem;
+  font-size: 1.5rem;
+  /* background-color: rgb(14, 14, 14); */
+  background-color: white;
+  width: 100%;
+  color: black;
+
+}
+
+.footerlinks a{
+  text-decoration: none;
+  color: black;
+  margin: 1rem;
+}
+.footerlinks a:hover{
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+@media  screen and (max-width:600px) {
+  #logo{
+    display: none;
+  }
+  #logosidebar{
+    width: 25rem;
+
+  }
+  #logoanchor{
+    background: none;
+  }
+  .navcontainer{
+    padding: 0;
+  }
+ 
+  .postermodel{
+    display: none;
+  }
+  .introsub-div{
+    margin-top: 12rem;
+  }
+  .promopoints{
+    flex-direction: column;
+    padding: 0;
+    margin: 3rem 0;
+  }
+  .promopoints img{
+    width: 35rem;
+    margin: 1rem;
+  }
+  .promopoints h1{
+    width: auto;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    height: auto;
+  }
+  html{
+    font-size: 45%;
+  }
+
+  .sidebar-div{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    top: 11rem;
+    z-index: 1;
+    box-shadow: 170px 10px 0px 10px rgba(0, 0, 0, 0.438);
+    background: linear-gradient( 90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 31, 124, 1) 0%, rgba(0, 212, 255, 1) 100% );
+    overflow: hidden;
+
+    transition: all 1s ease-in-out;
+    
+  }
+  
+  #sidebartoggelbtn{
+    display: flex;
+  }
+  .navlinks{
+    display: none;
+  }
+ 
+  #callnow-btn{
+    font-size: 2rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .btn{
+    font-size: 2.5rem;
+  }
+  #home-div{
+    margin-top: 16rem;
+    
+  }
+  .innersidebar-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    /* background-color: blue; */
+    padding: 1rem;
+    font-size: 2rem;
+    transition: all 5s ease-in;
+    align-items: center;
+  }
+  .innersidebar-div h1{
+    margin: 1rem 0rem;
+  }
+  .innersidebar-div a{
+    /* font-size: 3rem; */
+    /* margin: 1rem; */
+    text-decoration: none;
+    margin: 1rem;
+    color: rgb(21, 21, 21);
+    /* background-color: rgb(0, 102, 255); */
+    /* background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 31, 124, 1) 0%,
+      rgba(0, 212, 255, 1) 100%
+    ); */
+    padding: 1rem;
+    border-radius: 0.7rem;
+    /* border-bottom: 3px solid black; */
+
+  }
+  .scroll-lock{
+    height: 100vh;
+    overflow: hidden;
+  }
+  .form{
+    /* background-color: red; */
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+  }
+  #booking-div{
+    margin-top: 16rem;
+  }
+  .planinfo{
+    width: 90%;
+    height: fit-content;
+    padding: 2rem;
+    padding-left: 0;
+    height: 6rem;
+    flex-direction: column;
+  }
+  .planinfo h1{
+    margin: 0 0 0 1rem;
+    font-size: 2rem;
+  }
+  #textarea{
+    width: 80%;
+  }
+  .promo{
+    width: 87%;
+    /* padding: 0; */
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: center;
+  }
+  .promoimage {
+    width: 100%;
+    /* height: 20rem; */
+  }
+  #pricingdiv{
+    padding: 0;
+    margin-top: 16rem;
+    width: 96%;
+  }
+  .inputbox{
+    width: 90%;
+  }
+  .innerpricingdiv{
+    display: flex;
+    padding: 0;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* background-color: rebeccapurple; */
+  }
+  /* .pricecard button{
+    font-size: 1rem;
+  } */
+  .icons-div{
+    /* box-shadow: 0px 0px 5px; */
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    margin-top: 25rem;
+    border-radius: 1rem;
+  }
+  .icons-div img{
+    width: 4rem;
+    filter: drop-shadow(5px 5px 5px black);
+  }
+  .icons-div a{
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    margin: 0.5rem;
+  }
+  .socialicons-div{
+    display: none;
+  }
+  footer{
+    width: 100%;
+  }
+  .footercontainer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footerlinks{
+    flex-direction: column;
+  }
+}
+
