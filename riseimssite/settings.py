@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-6izz#%2i05n^myrlq5#=6^s!5a81*#@3(rtdfd%-p0&@eex9)d'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -118,7 +118,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-STATIC_HOST = "http://www.riseimstechnologies.com" if not DEBUG else ""
+STATIC_HOST = "https://www.riseimstechnologies.com" if not DEBUG else ""
 STATIC_URL = STATIC_HOST + "/static/"
 # STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
@@ -132,5 +132,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT=465
 EMAIL_HOST_USER='riseimstechnologies@gmail.com'
-EMAIL_HOST_PASSWORD='rteiegdtxncilkle'
-EMAIL_USE_TLS=True
+EMAIL_HOST_PASSWORD= os.environ['gmail_password']
+EMAIL_USE_TLS=True 
