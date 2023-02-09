@@ -27,23 +27,24 @@
   <div class="form">
     <form action="{%url 'contactus' %}" method='post'> {% csrf_token %}
     <div class="formsub-div">
+      <h1>Contact Us</h1>
       <div>
         <label for="">First Name : </label>
-        <input required name='first_name' placeholder='first name' class="inputbox" type="text" />
+        <input required name='first_name' placeholder='First name' class="inputbox" type="text" />
       </div>
       <div>
         <label for="">Last Name : </label>
-        <input required name='last_name' placeholder='last name' class="inputbox" type="text" />
+        <input required name='last_name' placeholder='Last name' class="inputbox" type="text" />
       </div>
     </div>
     <div class="formsub-div">
       <div>
         <label for="">Email : </label>
-        <input required name='email' placeholder='email' class="inputbox" type="email" />
+        <input required name='email' placeholder='Email' class="inputbox" type="email" />
       </div>
       <div>
         <label for="">Mobile : </label>
-        <input required name='mobile' placeholder='mobile number' class="inputbox" type="text" />
+        <input required name='mobile' placeholder='Mobile number' class="inputbox" type="text" />
       </div>
     </div>
     <label for="">Message</label>
