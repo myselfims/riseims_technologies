@@ -23,7 +23,7 @@
     <form action="{%url 'booking' plan.id %}" method='post'> {% csrf_token %}
     <div class="planinfo">
       <h1>Plan : {{plan.name}} - ₹{{plan.price}}</h1>
-      <a href="/"><button type='button' class="btn">Change</button></a>
+      <a href="{%url 'pricing' %}"><button type='button' class="btn">Change</button></a>
     </div>
     <div class="formsub-div">
       <div>

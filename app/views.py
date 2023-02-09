@@ -58,4 +58,4 @@ def contact_us(request):
         message.save()
 
         return render(request,'contact.html',{'submitted':True})
-    return render(request, 'contact.html')
+    return render(request, 'contact.html',{'submitted':False})
