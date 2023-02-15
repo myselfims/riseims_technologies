@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39.405" height="35.75" viewBox="0 0 39.405 35.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="0.5" x2="0.802" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#55d"/>
+      <stop offset="1" stop-color="#3cfffa"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_metro-home" data-name="Icon metro-home" class="cls-1" d="M41.976,24.39,22.273,9.1,2.571,24.39V18.155l19.7-15.294,19.7,15.294Zm-4.926-.556V38.611H27.2V28.76H17.348v9.851H7.5V23.835L22.273,12.752Z" transform="translate(-2.571 -2.861)"/>
+</svg>
